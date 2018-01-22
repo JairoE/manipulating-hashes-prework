@@ -19,7 +19,7 @@ def first_challenge
     if name == "Freddy Mercury"
       info.each do |attribute, value|
         if attribute == :favorite_icecream_flavors
-          attribute.delete_if do |x|
+          value.delete_if do |x|
             x == "strawberry"
           end
         end
